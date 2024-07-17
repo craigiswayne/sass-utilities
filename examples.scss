@@ -1,0 +1,17 @@
+@import 'fonts/font-faces';
+
+$roboto_fonts: (
+        'Roboto-Thin.ttf': (weight: 100),
+        'Roboto-ThinItalic.ttf': (weight: 100, font-style: italic),
+        'Roboto-Light.ttf': (weight: 300),
+        'Roboto-LightItalic.ttf': (weight: 300, font-style: italic),
+        'Roboto-Regular.ttf': (),
+        'Roboto-Medium.ttf': (weight: 500),
+        'Roboto-MediumItalic.ttf': (weight: 500, font-style: italic),
+        'Roboto-Bold.ttf': (weight: 700),
+        'Roboto-BoldItalic.ttf': (weight: 700, font-style: italic),
+        'Roboto-Black.ttf': (weight: 900),
+        'Roboto-BlackItalic.ttf': (weight: 900, font-style: italic),
+);
+
+@include font_faces('Roboto', '../fonts/', $roboto_fonts);

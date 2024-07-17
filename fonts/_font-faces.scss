@@ -1,0 +1,47 @@
+/**
+  Generates multiple font faces given a definition
+
+  $roboto_fonts: (
+    'Roboto-Thin.ttf': (
+      'weight': 100,
+      'format': truetype
+    ),
+    'Roboto-MediumItalic.ttf': (
+      'weight': 500,
+      'style': italic,
+      'format': truetype
+    )
+  );
+
+  @include font-faces('Roboto', '../fonts/', $roboto_fonts);
+ */
+
+@mixin font_faces($family_name, $font_folder_location, $font_files) {
+// TODO @error 'The defaultTo function only works for Sass maps';
+
+  @each $file_name, $definitions in $font_files {
+    @font-face {
+      font-family: $family_name;
+
+      @if (not map-has-key($definitions, 'format')) {
+        src: url('#{$font_folder_location}#{$file_name}') format('truetype');
+      } @else {
+        src: url('#{$font_folder_location}#{$file_name}') format('#{map-get($definitions, 'format')}');
+      }
+
+      // defaults to 400 (normal) if the weight is not provided
+      @if (not map-has-key($definitions, 'weight')) {
+        font-weight: 400;
+      } @else {
+        font-weight: #{map-get($definitions, 'weight')};
+      }
+
+      // defaults to normal if the style is not provided
+      @if (not map-has-key($definitions, 'font-style')) {
+        font-style: normal;
+      } @else {
+        font-style: #{map-get($definitions, 'font-style')};
+      }
+    }
+  }
+}
