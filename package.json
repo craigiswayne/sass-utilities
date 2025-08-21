@@ -1,0 +1,27 @@
+{
+  "name": "sass-utilities",
+  "version": "0.0.1",
+  "description": "Collection of SAAS Utilities",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigiswayne/sass-utilities.git"
+  },
+  "keywords": [
+    "sass",
+    "utilities",
+    "library"
+  ],
+  "author": "Craig Wayne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/craigiswayne/sass-utilities/issues"
+  },
+  "homepage": "https://github.com/craigiswayne/sass-utilities#readme"
+}
