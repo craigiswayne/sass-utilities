@@ -1,0 +1,13 @@
+@keyframes tickle {
+  0% {
+    transform: none
+  }
+
+  50% {
+    transform: scale(1.1) rotate(-12deg) translateY(-2px)
+  }
+
+  to {
+    transform: scale(1.2) rotate(12deg) translateY(-4px)
+  }
+}

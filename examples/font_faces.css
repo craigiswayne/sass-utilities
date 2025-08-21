@@ -13,7 +13,7 @@
     )
   );
 
-  @include font-faces('Roboto', '../fonts/', $roboto_fonts);
+  @include font-faces('Roboto', '../docs/', $roboto_fonts);
  */
 @font-face {
   font-family: "Roboto";
@@ -82,4 +82,4 @@
   font-style: italic;
 }
 
-/*# sourceMappingURL=examples.css.map */
+/*# sourceMappingURL=font_faces.css.map */

@@ -13,7 +13,7 @@
     )
   );
 
-  @include font-faces('Roboto', '../fonts/', $roboto_fonts);
+  @include font-faces('Roboto', '../docs/', $roboto_fonts);
  */
 
 @mixin font_faces($family_name, $font_folder_location, $font_files) {

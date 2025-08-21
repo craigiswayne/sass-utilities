@@ -1,0 +1,10 @@
+@import '../mixins/vendor_prefixes/keyframes';
+@include keyframes(pulse) {
+  0% {
+    box-shadow: 0 0 0 0 rgb(41 130 241);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
