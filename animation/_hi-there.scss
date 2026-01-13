@@ -1,0 +1,29 @@
+/**
+As seen on: https://designbuddy.net/#plans
+When hovering on the price plan
+ */
+
+@import '../mixins/vendor_prefixes/keyframes';
+
+@include keyframes(hi-there) {
+  30% {
+    transform: scale(1.2);
+  }
+  40%,
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animation.hi-there {
+  animation: hithere 1s ease-in-out;
+}

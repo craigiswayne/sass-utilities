@@ -1,0 +1,29 @@
+// primary
+  // primary-light
+  // primary-dark
+  // primary-invert
+  // primary-button
+  // primary-button-outline
+
+// secondary
+  // secondary-light
+  // secondary-dark
+  // secondary-invert
+
+// accent
+
+// dark
+// light
+
+
+
+// success
+// error
+// warn
+// info
+
+// --color-#{$color-name};
+// --background-color-#{$color-name};
+// --outline-color-#{$color-name}
+
+@mixin palette($colors){}
